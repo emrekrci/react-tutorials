@@ -1,5 +1,6 @@
-import ExpencesContainer from "./components/Expenses/ExpencesContainer.js";
-import './components/Expenses/ExpencesContainer.css'
+import Expences from "./components/Expenses/Expenses.js";
+import './components/Expenses/Expenses.css'
+import NewExpense from "./components/NewExpense/NewExpense.js";
 
 function App() {
   const expenses = [
@@ -29,9 +30,14 @@ function App() {
     },
   ];
 
+  const addExpenseToListHandler = (expense) => {
+    console.log(expense);
+  }
+
   return (
     <div className="expenses">
-      <ExpencesContainer expenses = {expenses}
+      <NewExpense onAddExpenseToList = {addExpenseToListHandler}/>
+      <Expences expenses = {expenses}
         title={expenses[0].title}
         amount={expenses[0].amount}
         date={expenses[0].date}
