@@ -1,21 +1,34 @@
 import { useState } from "react";
+import AddNewExpese from "./AddNewExpense";
 import ExpenseForm from "./ExpenseForm";
 
-import './NewExpense.css'
+import "./NewExpense.css";
 
 const NewExpense = (props) => {
-    const saveNewExpenseHandler = (newExpense) => {
-        const expense = {
-            ...newExpense, 
-            id : 13
-        }
+  const [show, setShow] = useState(false);
 
-        props.onAddExpenseToList(expense);
-    }
+  const changeShowHandler = (newShow) => {
+    setShow(newShow);
+  };
+
+  const saveNewExpenseHandler = (newExpense) => {
+    const expense = {
+      ...newExpense,
+      id: 13,
+    };
+    props.onAddExpenseToList(expense);
+  };
 
   return (
     <div className="new-expense">
-      <ExpenseForm  onSaveNewExpense= {saveNewExpenseHandler} />
+      {show === false ? (
+        <AddNewExpese onChangeShow={changeShowHandler} />
+      ) : (
+        <ExpenseForm
+          onSaveNewExpense={saveNewExpenseHandler}
+          onChangeShow={changeShowHandler}
+        />
+      )}
     </div>
   );
 };
