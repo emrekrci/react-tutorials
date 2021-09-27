@@ -1,6 +1,6 @@
-import Expences from "./components/Expenses/Expenses.js";
-import './components/Expenses/Expenses.css'
-import NewExpense from "./components/NewExpense/NewExpense.js";
+import Expences from "./components/ExpensesManager/Expenses/Expenses.js";
+import './components/ExpensesManager/Expenses/Expenses.css'
+import NewExpense from "./components/ExpensesManager/NewExpense/NewExpense.js";
 import {useState} from "react";
 
 function CreateGuid() {  
