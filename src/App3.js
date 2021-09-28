@@ -1,29 +1,20 @@
 import { useState } from "react";
-import UserForm from "./components/FirstPractice/UserForm";
-import UserList from "./components/FirstPractice/UserList";
+
+import AddUser from "./components/FirstPractice/Users/AddUser";
+import UserList from "./components/FirstPractice/Users/UserList";
 
 const App3 = (props) => {
-  const [userList, setUserList] = useState([{ username: "Emre", age: 27, id:1 }]);
+    const [users, setUsers] = useState([]);
 
-  const addUserList = (user) => {
-    setUserList((prevList) => {
-      return [user, ...prevList];
-    });
-
-    console.log(userList);
-  };
-
-  const deleteUser = (userId) => {
-    setUserList(prevList => {
-        const updateList = prevList.filter(user => user.id !== userId);
-        return updateList;
-    })
-  }
-
+    const addUser = (uName, uAge) => {
+      setUsers((prevUsers) => {
+        return [...prevUsers, {name: uName , age: uAge, id: Math.random()}];
+      })
+    }
   return (
     <div>
-      <UserForm onAddUser={addUserList} />
-      <UserList userList={userList} deleteUser={deleteUser}/>
+      <AddUser onAddUser={addUser}/>
+      <UserList users={users}/>
     </div>
   );
 };
