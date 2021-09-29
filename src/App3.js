@@ -12,10 +12,10 @@ const App3 = (props) => {
       })
     }
   return (
-    <div>
+    <>
       <AddUser onAddUser={addUser}/>
       <UserList users={users}/>
-    </div>
+    </>
   );
 };
 
