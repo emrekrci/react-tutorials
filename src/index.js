@@ -6,10 +6,11 @@ import App3 from "./App3";
 import App4 from "./App4";
 import App5 from "./App5";
 import { AuthContextProvider } from "./Context/auth-context";
+import App6 from "./App6";
 
 ReactDOM.render(
-  <AuthContextProvider>
-    <App5 />
-  </AuthContextProvider>,
+  // <AuthContextProvider>
+    <App6 />,
+  // </AuthContextProvider>
   document.getElementById("root")
 );
