@@ -3,12 +3,12 @@ import CartProvider from "../store/CartProvider";
 import AvailableMeals from "./AvailableMeals";
 import MealsSummary from "./MealsSummary";
 
-const Meals = (props) => {
+const Meals = () => {
   return (
-    <CartProvider>
+    <React.Fragment>
       <MealsSummary></MealsSummary>
       <AvailableMeals></AvailableMeals>
-    </CartProvider>
+    </React.Fragment>
   );
 };
 
