@@ -1,6 +1,5 @@
 import UsersContext from './components/ClassBasedExample/Context/user-context';
 import UserFinder from './components/ClassBasedExample/UserFinder';
-import Users from './components/ClassBasedExample/Users';
 
 
 const DUMMY_USERS = [
