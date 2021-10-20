@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import AddUser from "./components/FirstPractice/Users/AddUser";
-import UserList from "./components/FirstPractice/Users/UserList";
+import AddUser from "./Users/AddUser";
+import UserList from "./Users/UserList";
 
 const App3 = (props) => {
     const [users, setUsers] = useState([]);

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-import Login from './components/SideEffects/Login/Login';
-import Home from './components/SideEffects/Home/Home';
-import MainHeader from './components/SideEffects/MainHeader/MainHeader';
+import Login from './Login/Login';
+import Home from './Home/Home';
+import MainHeader from './MainHeader/MainHeader';
 
 function App4() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 
-import Login from "./components/UseReducer/Login/Login";
-import Home from "./components/UseReducer/Home/Home";
-import MainHeader from "./components/UseReducer/MainHeader/MainHeader";
-import AuthContext from "./Context/auth-context";
+import Login from "./Login/Login";
+import Home from "./Home/Home";
+import MainHeader from "./MainHeader/MainHeader";
+import AuthContext from "../../Context/auth-context";
 import { useContext } from "react/cjs/react.development";
 
 function App5() {

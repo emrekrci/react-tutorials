@@ -1,8 +1,8 @@
 import React, {useState} from "react";
-import Cart from "./components/FoodOrderApp/Cart/Cart";
-import Header from "./components/FoodOrderApp/Layout/Header";
-import Meals from "./components/FoodOrderApp/Meals/Meals";
-import CartProvider from "./components/FoodOrderApp/store/CartProvider";
+import Cart from "./Cart/Cart";
+import Header from "./Layout/Header";
+import Meals from "./Meals/Meals";
+import CartProvider from "./store/CartProvider";
 
 function App6() {
 
