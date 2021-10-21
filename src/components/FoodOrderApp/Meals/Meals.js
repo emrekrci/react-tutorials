@@ -1,5 +1,4 @@
 import React from "react";
-import CartProvider from "../store/CartProvider";
 import AvailableMeals from "./AvailableMeals";
 import MealsSummary from "./MealsSummary";
 
